@@ -3,17 +3,14 @@
 
 
     <h2>Questions for : {{ title }}</h2>
-    <form action="/story">
+    <form id="formHome" action="/story">
         {% for prompt in prompts %}
         <p>
-            <label for="{{prompt}}">{{prompt.capitalize()}}:
-                <input type="text" placeholder="{{prompt}}" name="{{prompt}}">
-            </label>
+            <label for="{{prompt}}">{{prompt.capitalize().replace("_" , " ")}}:</label>
+                <input type="text" placeholder="{{prompt}}" name="{{prompt}}" id="{{prompt}}">
+            
         </p>
-        <!-- <p>
-            {{ prompt }} :
-            <input name="{{ prompt }}" placeholder="{{ prompt }}" />
-        </p> -->
+        
         {% endfor %}
         <input type="hidden" name="story_id" value="{{ story_id}}">
         <button>Submit</button>

@@ -57,22 +57,22 @@ story2 = Story(
 story3 = Story(
     "Kids",
     "Foods",
-    ["Adjective", "Foods1", "Verb", "Saying", "Noun", "Foods2", "Color", "Vehicle", "Animal", "Person"],
-    """Today I went to my favorite Taco Stand called the {Adjective} {Animal}. Unlike most food stands, they cook and prepare the food in a {Vehicle} while you {Verb}. The best thing on the menu is the {Color} {Noun}. Instead of ground beef they fill the taco with {Foods1}, cheese, and top it off with a salsa made from {Foods2}. If that doesn't make your mouth water, then it's just like {Person} always says: {Saying}!"""
+    ["Adjective", "Foods_1", "Verb", "Saying", "Noun", "Foods_2", "Color", "Vehicle", "Animal", "Person"],
+    """Today I went to my favorite Taco Stand called the {Adjective} {Animal}. Unlike most food stands, they cook and prepare the food in a {Vehicle} while you {Verb}. The best thing on the menu is the {Color} {Noun}. Instead of ground beef they fill the taco with {Foods_1}, cheese, and top it off with a salsa made from {Foods_2}. If that doesn't make your mouth water, then it's just like {Person} always says: {Saying}!"""
 )
 
 story4 = Story(
     "Kids-Fav",
     "Gingerbread Man",
-    ["Place", "Adjective", "Verb_Action", "Food", "Things", "Profession", "Thing", "Color", "Celebrity", "Animal"],
-    """There once was a gingerbread man who had two {Things} for eyes and a {Food} for a nose. He always said, '{Verb_Action} as fast as you can, you can't catch me I'm the gingerbread man.' One day he ran past a {Adjective} {Profession}, but they couldn't catch him. He kept running until he passed a {Animal}, but they couldn't catch him either. Suddenly, he came across a river near {Place}. How would he cross? Then he saw a {Color} {Thing} floating by. He jumped on it, but it was actually {Celebrity}--who just so happened to love cookies :)"""
+    ["Place", "Adjective", "Action_Verb", "Food", "Things", "Profession", "Thing", "Color", "Celebrity", "Animal"],
+    """There once was a gingerbread man who had two {Things} for eyes and a {Food} for a nose. He always said, '{Action_Verb} as fast as you can, you can't catch me I'm the gingerbread man.' One day he ran past a {Adjective} {Profession}, but they couldn't catch him. He kept running until he passed a {Animal}, but they couldn't catch him either. Suddenly, he came across a river near {Place}. How would he cross? Then he saw a {Color} {Thing} floating by. He jumped on it, but it was actually {Celebrity}--who just so happened to love cookies :)"""
 )
 
 story5 = Story(
     "Kids-Love",
     "Butterflies",
-    ["Things", "An_Insect", "Verb", "Saying", "Color", "Adjective1", "Food", "Person", "Adjective2", "Place"],
-    """Last night I dreamed I was a {Adjective2} butterfly with {Color} splotches that looked like {Things}. I flew to {Place} with my best friend, {Person}, who was a {Adjective1} {An_Insect}. We ate some {Food} when we got there and then decided to {Verb}. The dream ended when I said, '{Saying}.'"""
+    ["Things", "An_Insect", "Verb", "Saying", "Color", "Adjective_1", "Food", "Person", "Adjective_2", "Place"],
+    """Last night I dreamed I was a {Adjective_2} butterfly with {Color} splotches that looked like {Things}. I flew to {Place} with my best friend, {Person}, who was a {Adjective_1} {An_Insect}. We ate some {Food} when we got there and then decided to {Verb}. The dream ended when I said, '{Saying}.'"""
 )
 
 stories = {s.code : s for s in [story1 , story2 , story3 , story4 , story5]}
