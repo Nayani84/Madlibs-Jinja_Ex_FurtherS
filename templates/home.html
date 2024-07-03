@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <h2>Questions for : {{ title }}</h2>
+    <form action="/story">
+        {% for prompt in prompts %}
+        <p>
+            <label for="{{prompt}}">{{prompt.capitalize()}}:
+                <input type="text" placeholder="{{prompt}}" name="{{prompt}}">
+            </label>
+        </p>
+        <!-- <p>
+            {{ prompt }} :
+            <input name="{{ prompt }}" placeholder="{{ prompt }}" />
+        </p> -->
+        {% endfor %}
+        <input type="hidden" name="story_id" value="{{ story_id}}">
+        <button>Submit</button>
+    </form>
+
+{% endblock %}

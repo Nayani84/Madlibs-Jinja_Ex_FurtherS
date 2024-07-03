@@ -1,0 +1,52 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+body {
+
+    background-color: #a7d4f7;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 10px;
+    width: 50%;
+
+    background-color: #5fbff9;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(213, 9, 231);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 200px;
+    padding: 5px;
+    background-color: rgb(238, 115, 70);
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    border-style: none;
+    background-color: orangered;
+}
+
+p {
+    margin: 50px auto;
+}
+
+#form {
+    margin: 5px;
+}
+
+#input {
+    width: 100px;
+}
